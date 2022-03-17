@@ -1,3 +1,4 @@
+alert("Editしました!")
 // Prediction OneのAPI作成画面で表示されるAPI URLとAPI Keyを設定する
 const PREDICTION_ONE_KEY = "23e4d37a-0484-45aa-bb05-b751a5ece92b";
 const PREDICTION_ONE_URL = "https://user-api.predictionone.sony.biz/v1/groups/gbe5y8ebdzumtqko/classifiers/213n14b4auiw1v14/inference";
