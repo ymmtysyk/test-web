@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <link href="./style.css" rel="stylesheet" type="text/css">
+    
+</head>
+<body>
+    <script src="index.js"></script>
+    <div id="pred_container">
+        <h1>交通事故危険度予測システム</h1>
+        <p>交通事故のリスクを予測します。</p>
+        <p>※この予測AIは、学習用に作成したものです。実際の事故データを基に作成していますが、モデルの正確性の担保はしません。実際のリスク評価に用いないでください。</p>
+        <h2>予測する場所・日時の情報を入力してください</h2>
+        <h3>信号機</h3>
+            <select name="信号機">
+                <option value="1">点灯－３灯式</option>
+                <option value="8">点灯－歩車分式</option>
+                <option value="2">点灯－押ボタン式</option>
+                <option value="3">点滅－３灯式</option>
+                <option value="4">点滅－１灯式</option>
+                <option value="5">消灯</option>
+                <option value="6">故障</option>
+                <option value="7">施設なし</option>
+            </select>
+                
+            <h3>曜日(発生年月日)</h3>
+            <select name="曜日(発生年月日)">
+                <option value="1">日</option>
+                <option value="2">月</option>
+                <option value="3">火</option>
+                <option value="4">水</option>
+                <option value="5">木</option>
+                <option value="6">金</option>
+                <option value="7">土</option>
+            </select>
+            <h3>昼夜</h3>
+            <select name="昼夜">
+                <option value="11">昼－明</option>
+                <option value="12">昼－昼</option>
+                <option value="13">昼－暮</option>
+                <option value="21">夜－暮</option>
+                <option value="22">夜－夜</option>
+                <option value="23">夜－明</option>
+            </select>
+            <h3>天候</h3>
+            <select name="天候">
+                <option value="1">晴</option>
+                <option value="2">曇</option>
+                <option value="3">雨</option>
+                <option value="4">霧</option>
+                <option value="5">雪</option>
+            </select>
+            <h3>地形</h3>
+            <select name="地形">
+                <option value="1">市街地ー人口集中</option>
+                <option value="2">市街地ーその他</option>
+                <option value="3">非市街地</option>
+            </select>
+            <button onclick="submit()" id="submit">送信</button>
+    </div>
+    <hr />
+    <div id="result_container">
+        <h2>結果</h2>
+        <p id="result">-----</p>
+    </div>
+</body>
+</html>

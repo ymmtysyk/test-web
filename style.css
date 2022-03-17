@@ -1,0 +1,47 @@
+#pred_container,
+#result_container {
+    width: 80%;
+    margin: 0 auto;
+    min-width: 500px;
+    max-width: 1200px;
+}
+
+select {
+    font-size: 1.1em;
+    padding: 10px;
+    margin-left: 20px;
+}
+
+button {
+    font-size: 1.2em;
+    display: block;
+    width: 50%;
+    margin: 30px auto;
+    padding: 10px 0;
+}
+
+#result_container {
+    text-align: center;
+
+}
+
+#result {
+    border: 1px solid #ddd;
+    padding: 10px;
+    width: 50%;
+    margin: 0 auto;
+    line-height: 3em;
+    text-align: center;
+    font-weight: bold;
+
+}
+
+#result.high {
+    color: red;
+    background-color: rgba(255, 0, 0, 0.2);
+}
+
+#result.middle {
+    color: sienna;
+    background-color: rgba(255, 255, 0, 0.2);
+}
